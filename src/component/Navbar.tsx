@@ -40,7 +40,7 @@ function Navbar() {
             </ul>
           </div>
           <div>
-            <Link href={"./basket"}>
+            <Link href={"/basket"}>
               <span>Basket</span>
               <span className="bg-red-600 rounded-2xl  px-1.5 relative -top-2 right-2 text-white">
                 {getTotalQty()}
