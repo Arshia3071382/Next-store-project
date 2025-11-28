@@ -25,20 +25,18 @@ function CartItem({ id }: ICartProp) {
   return (
     <div>
       <Container>
-        <div className=" flex flex-col  sm:flex-row items-center gap-4 shadow mt-2 px-5 ">
+        <div className=" flex flex-col  justify-between sm:flex-row items-center gap-4 shadow my-4 py-3 px-5 ">
           <img width={100} src={data?.image} alt={data?.title} />
           <div className="mb-3 flex flex-col  items-center  ">
-            <div className="text-center sm:text-left">
-              <h1 className="text-left">{data?.title}</h1>
+            <div className="text-center flex flex-col gap-2  sm:text-left">
+              <h1 className="text-left text-xl">{data?.title}</h1>
               <h3 className="text-green-500">{data?.price}$</h3>
             </div>
-
-            <div className="pl-0 sm:pl-50 ">
+          </div>
+           <div className="pl-0 sm:pl-50 ">
               <AddToCart id={String(id)} />
             </div>
-          </div>
         </div>
-        
       </Container>
     </div>
   );

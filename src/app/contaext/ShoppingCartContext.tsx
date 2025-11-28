@@ -1,5 +1,6 @@
 "use client";
-import { Children, createContext, useContext, useState } from "react";
+import { Children, createContext, useContext, useEffect, useState } from "react";
+import { json } from "stream/consumers";
 
 interface IChildren {
   children: React.ReactNode;
@@ -83,6 +84,19 @@ export function ShoppingCartContextProvider({ children }: IChildren) {
         }
     })
   }
+
+  useEffect(() => {
+   let storedCartItems = localStorage.getItem("cartItems")
+
+   if(storedCartItems){
+    setCartItems(JSON.parse(storedCartItems))
+   }
+  } , [])
+
+
+  useEffect(() => {
+    localStorage.setItem("cartItems" , JSON.stringify(cartItems))
+  } , [cartItems])
 
   return (
     <shoppingCartContext.Provider
