@@ -1,7 +1,42 @@
 {
-    "dicount": [
-        {"id" : 1 , "code" : "off10" , "percentage" : 10},
-        {"id" : 2 , "code" : "off13" , "percentage" : 20},
-        {"id" : 3 , "code" : "off15" , "percentage" : 50}
-    ]
+  "dicount": [
+    {
+      "id": "1",
+      "code": "off10",
+      "percentage": 10
+    },
+    {
+      "id": "2",
+      "code": "off13",
+      "percentage": 20
+    },
+    {
+      "id": "3",
+      "code": "off15",
+      "percentage": 50
+    }
+  ],
+  "newProduct": [
+    {
+      "id": 465,
+      "title": "Shirt",
+      "image": "https://imagekit.io/blog/content/images/2019/12/image-optimization.jpg",
+      "price": "375",
+      "description": ""
+    },
+    {
+      "id": 334,
+      "title": "Ball",
+      "image": "https://imagekit.io/blog/content/images/2019/12/image-optimization.jpg",
+      "price": "22",
+      "description": ""
+    },
+    {
+      "id": 914,
+      "title": "Fruit",
+      "image": "https://static.vecteezy.com/system/resources/thumbnails/057/068/323/small/single-fresh-red-strawberry-on-table-green-background-food-fruit-sweet-macro-juicy-plant-image-photo.jpg",
+      "price": "12",
+      "description": "Create your best work, with the best royalty-free content ... Unique hand-picked photos, affordable HD and 4K video clips, editable vectors—and much, much more ...\n"
+    }
+  ]
 }

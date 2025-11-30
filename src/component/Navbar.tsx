@@ -5,6 +5,7 @@ import logo from "./../../public/image/n-logo-vector-art-design-template-b9687b1
 import { usePathname } from "next/navigation";
 import Container from "./../component/Container";
 import { useShoppingCartContext } from "@/app/contaext/ShoppingCartContext";
+import panelImg from "./../../public/image/person_29dp_434343_FILL0_wght400_GRAD0_opsz24.png";
 
 function Navbar() {
   const { getTotalQty } = useShoppingCartContext();
@@ -39,12 +40,15 @@ function Navbar() {
               ))}
             </ul>
           </div>
-          <div>
+          <div className="flex items-center">
             <Link href={"/basket"}>
               <span>Basket</span>
               <span className="bg-red-600 rounded-2xl  px-1.5 relative -top-2 right-2 text-white">
                 {getTotalQty()}
               </span>
+            </Link>
+            <Link href={"/dashbord"}>
+              <Image src={panelImg} alt={"panel"} />
             </Link>
           </div>
         </div>
