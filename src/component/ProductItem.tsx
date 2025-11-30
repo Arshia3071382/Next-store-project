@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export interface IProduct {
   id: number
-  title: string
+  title: string 
   price: number
   description: string
   category: string
@@ -15,6 +15,8 @@ export interface Rating {
   rate: number
   count: number
 }
+
+
 
 function ProductItem({ title, price, description, image }: IProduct) {
   return (
