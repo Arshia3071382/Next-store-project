@@ -19,6 +19,10 @@ function Navbar() {
       title: "store",
       href: "/store",
     },
+    {
+      title : "login",
+      href : "/login"
+    }
   ];
   return (
     <div>
